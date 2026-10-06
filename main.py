@@ -1,5 +1,5 @@
-from sisvenda.produto import Produto
-from sisvenda.venda import Venda
+from Sis_vendas.produto import Produto
+from Sis_vendas.venda import Venda
 
 
 def formatar_moeda(valor):
