@@ -1,6 +1,3 @@
-from .produto import Produto
-
-
 class ItemVenda:
     """Classe que representa um item dentro de uma venda."""
     
