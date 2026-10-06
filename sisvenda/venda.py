@@ -1,6 +1,9 @@
 from datetime import datetime
-from .produto import Produto
-from .item_venda import ItemVenda
+
+if __package__:
+    from .item_venda import ItemVenda
+else:
+    from item_venda import ItemVenda
 
 
 class Venda:
