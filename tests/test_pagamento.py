@@ -11,7 +11,7 @@ from Sis_vendas.venda import Venda
 
 
 class TestPagamentoVenda(unittest.TestCase):
-    def testar_valores_finais_das_modalidades(self):
+    def test_valores_finais_das_modalidades(self):
         casos = (
             (PagamentoDebito(), 100.00),
             (PagamentoPix(), 95.00),
@@ -26,7 +26,7 @@ class TestPagamentoVenda(unittest.TestCase):
                 self.assertTrue(venda.adicionar_item(produto, 1))
                 self.assertAlmostEqual(venda.valor_total, valor_esperado, places=2)
 
-    def testar_venda_sem_pagamento_mantem_debito_por_compatibilidade(self):
+    def test_venda_sem_pagamento_mantem_debito_por_compatibilidade(self):
         produto = Produto("Produto de teste", 100.00, 1)
         venda = Venda()
 
